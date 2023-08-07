@@ -1,0 +1,58 @@
+<div class="exam-version-wrapper">
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn btn-large btn-primary" (click)="onSetVersion('1');"><b>Version 1</b></button>
+        </div>
+
+        <div class="col-md-6">
+            <button class="btn btn-large btn-primary" (click)="onSetVersion('2');"><b>Version 2</b></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="color-list-wrapper-v1" *ngIf="isVersion1">
+    <div class="color-list-box">
+        <div class="box-title">
+            <span>Colors:</span>
+        </div>
+
+        <div class="color-box">
+            <div class="list" *ngFor="let color of color_list">
+                <div class="name">
+                    <span>{{ color.name }}</span>
+                </div>
+
+                <div class="preview">
+                    <button class="btn btn-md btn-primary" (click)="onPreviewColor(color);">preview</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="color-preview-box">
+        <span>Name: {{ color_name }}</span>
+        <span>Hex: {{ hex_code }}</span>
+        <span>Color Code: {{ color_code }}</span>
+    </div>
+</div>
+
+<div class="color-list-wrapper-v2" *ngIf="isVersion2">
+    <div class="color-list-box">
+        <div class="color-preview-box">
+            <span>Name: {{ color_name }}</span>
+            <span>Hex: {{ hex_code }}</span>
+            <span>Color Code: {{ color_code }}</span>
+        </div>
+
+        <div class="box-title">
+            <span>Colors:</span>
+        </div>
+
+        <div class="color-box">
+            <div *ngFor="let color of color_list">
+                <button class="btn btn-md btn-default" (click)="onPreviewColor(color);"><span>{{ color.name }}</span></button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,128 @@
+.exam-version-wrapper {
+    width: 60%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-list-wrapper-v1 {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    .color-list-box {
+        width: 50%;
+        min-height: 500px;
+        margin: 10px auto;
+        padding: 20px;
+
+        .box-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .color-box {
+            width: 100%;
+            max-height: 500px;
+            overflow-y: scroll;
+
+            .list {
+                display: flex;
+                align-items: center;
+                border: 1px solid #e7e2e2;
+                padding: 5px;
+
+                .name {
+                    width: 50%;
+                    font-weight: 600;
+                }
+
+                .preview {
+                    width: 50%;
+                    display: flex;
+                    justify-content: end;
+                }
+            }
+        }
+    }
+
+    .color-preview-box {
+        border: 1px solid #e7e2e2;
+        font-size: 15px;
+        width: 50%;
+        font-weight: 600;
+        height: 200px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+}
+
+.color-list-wrapper-v2 {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .color-list-box {
+        width: 50%;
+        min-height: 500px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid #e7e2e2;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        border-radius: 10px;
+
+        .color-preview-box {
+            border: 1px solid #e7e2e2;
+            font-size: 15px;
+            font-weight: 600;
+            height: 200px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+        }
+
+        .box-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .color-box {
+            max-height: 400px;
+            overflow-y: scroll;
+
+            button {
+                width: 100%; margin: 5px 0; font-size: 15px; font-weight: 600;
+                
+                &:hover {
+                    background-color: #2e6da4;
+                    color: white;
+                    border-color: #2e6da4;
+
+                    span {
+                        display:none;
+                    }
+
+                    &:before {
+                        content:"Preview";
+                    }
+                }
+            }
+        }
+    }
+}
