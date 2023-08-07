@@ -3,8 +3,8 @@
 Install NVM - https://github.com/coreybutler/nvm-windows
   - install node version 18.16.0 trough nvm - nvm install 18.16.0
   - use node 18.16.0 - nvm use 18.16.0
-I
-nstall Angular Cli
+
+Install Angular Cli
   - npm install -g @angular/cli
 
 Clone Project
