@@ -1,0 +1,1 @@
+# quickstrike-color-library
